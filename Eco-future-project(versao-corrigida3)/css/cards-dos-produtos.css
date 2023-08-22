@@ -1,0 +1,106 @@
+/*PRODUTOS DESTAQUES*/
+
+/*TEXTO QUE FICA EM CIMA DOS PRODUTOS*/
+/*NA TELA INICIAL SÃO OS TEXTOS "PRODUTOS DESTAQUES" E O "VEJA MAIS"*/
+.txtdestaq{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 2% 0;
+    color:#0A242A;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.vejamais{
+    color: #0A242A;
+}
+.destaques{
+    margin-top: 5%;
+    padding: 30px;   
+    position: relative;
+}
+
+/*CARDS*/
+.cards{
+    display: flex;
+    gap: 3.5rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgproduto{
+    width: 275px;
+    height: 240px;
+}
+.produto{
+    width: 295px;
+    height: 325px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid #58585862;
+    transition: ease-in-out 0.5s;
+}
+.produto:hover{
+    transform: scale(1.1);
+    /*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.281);*/
+}
+
+.produto i{
+    position: absolute;
+    background-color: #1C4C4E;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    right: 0;
+    bottom: 0;
+}
+.produto h3{
+    text-transform: uppercase;
+    color: #1C4C4E;
+}
+.produto span{
+    color: #1C4C4E;
+    font-weight: 500;
+}
+/*RESPONSIVO*/
+
+@media (max-width:1440px) {
+    #card5{
+        display: none;
+    }
+}
+@media (max-width:1372px){
+    .cards{
+        gap: 1.5rem;
+    }
+    .imgproduto{
+        width: 250px;
+        height: 190px;
+    }
+    .produto{
+        width: 275px;
+        height: 300px;
+        padding: 10px;
+        position: relative;
+    }
+}
+@media(max-width:1215px){
+    #card4{
+        display: none;
+    }
+}
+@media(max-width:900px){
+    .cards{
+        flex-direction: column;
+    }
+    .produto{
+        width: 295px;
+    height: 325px;
+    }
+    .imgproduto{
+        width: 275px;
+    height: 240px;
+    }
+}

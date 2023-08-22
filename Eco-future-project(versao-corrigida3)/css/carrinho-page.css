@@ -1,0 +1,94 @@
+.textPrincipal{
+    text-align: center;
+    color: #1C4C4E;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.errorMessage{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 27px;
+    font-weight: 400;
+}
+.card-produto{
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    padding: 30px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+.imgproduto{
+    width: 275px;
+    height: 240px;
+}
+.produtoInfoConteiner{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #05050562;
+}
+.produtoInfoConteiner img{
+    border: 1px solid rgba(0, 0, 0, 0.315);
+}
+.produtoInfoConteiner h3{
+    color: #1C4C4E;
+    font-size: 29px;
+    text-transform: uppercase;
+}
+.produtoInfoConteiner p{
+    color: #1C4C4E;
+    font-weight: bold;
+}
+.info{
+    margin: auto;
+    padding: 20px;
+}
+.info button{
+    text-transform: uppercase;
+    font-weight: bold;  
+    margin-top: 2%; 
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 20px;
+    font-size: 15px;  
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border: none;
+    margin-right: 10px;
+    color: white;
+    background-color: #1C4C4E;
+}
+.info button:hover{
+    transform: scale(1.1);
+}
+.info h3{
+    color: #1C4C4E;
+    font-size: 29px;
+    text-transform: uppercase;
+}
+#removeButton{
+    padding: 10px 10px 10px 10px;
+    height: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 300;  
+    margin-top: 2%; 
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border: none;
+    color: white;
+    background-color: #1C4C4E;
+}
+
+@media(max-width:800px){
+    .card-produto{
+        display: block;
+    }
+    .produtoInfoConteiner{
+        width: 317px;
+        margin: auto;
+    }
+}
